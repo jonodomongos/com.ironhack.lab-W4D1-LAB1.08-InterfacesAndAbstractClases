@@ -1,4 +1,4 @@
-public class Main {
+public class MainCoches {
     public static void main(String[] args) {
     /*
     INSTRUCCIONES:
@@ -35,5 +35,12 @@ public class Main {
 	    - Los objetos de tipo Pelicula deben tener una propiedad adicional llamada valoracion,
         un Double que indique la puntuación o valoración de la película.
       */
+        Sedan sedan = new Sedan("VIN123", "Toyota", "Corolla", 35000);
+        VehiculoUtilitario suv = new VehiculoUtilitario("VIN456", "Jeep", "Wrangler", 42000, true);
+        Camion camion = new Camion("VIN789", "Volvo", "FH16", 80000, 25.5);
+
+        System.out.println(sedan.obtenerInfo());
+        System.out.println(suv.obtenerInfo());
+        System.out.println(camion.obtenerInfo());
     }
 }
